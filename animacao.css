@@ -1,0 +1,61 @@
+/* ========ITENS HOVER ANIMATION============== */
+.dado-painel:hover {
+  background-color: var(--blue);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.dado-painel:hover h3 {
+  color: #fff;
+}
+tbody tr:hover {
+  background-color: var(--blue);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.listagem li:hover {
+  background-color: var(--blue);
+  border-radius: 7px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* =========================================== */
+.opem span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.painelselect .nav__list li:nth-child(1),
+.cadastrarselect .nav__list li:nth-child(1),
+.vendasselect .nav__list li:nth-child(1),
+.lojaselect .nav__list li:nth-child(1),
+.comprasselect .nav__list li:nth-child(1),
+.arvoreselect .nav__list li:nth-child(1),
+.financeiroselect .nav__list li:nth-child(1) {
+  background-color: #fff;
+}
+.painelselect .nav__list li:nth-child(1) .title-namenav {
+  color: var(--blue);
+}
+
+.opem span:nth-child(2) {
+  width: 40px;
+  transform: translateX(60px);
+}
+.opem span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.active {
+  width: 200px;
+}
+
+.space {
+  margin-left: 210px;
+}
+
+@media (max-width: 800px) {
+  .space {
+    margin-left: 60px;
+  }
+}

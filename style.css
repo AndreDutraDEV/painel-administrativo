@@ -1,0 +1,448 @@
+/* ======VARIABLES=========== */
+/* ====COLORS==== */
+:root
+{
+    /* --nav-color:; */
+    --body-color: #fff;
+    /* --h1-color:; */
+    --font-color: #000;
+    /* --header-color:; */
+    --blue:#287bff;
+    --white:#fff;
+    --grey: #f5f5f5;
+    --black: #000;
+    --black1: #222;
+    --black2: #999;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+    background-color: var(--body-color);
+    width: 100%;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li,ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+main
+{
+    margin: 0;
+    padding: 0 20px;
+    margin-left: 60px;
+    transition: 0.5s;
+    /* overflow-x: hidden; */
+}
+
+.main-login{
+    margin: 0;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+
+div .title{
+    max-height: 50px;
+}
+
+.span-data{
+    font-weight: 600;
+    color: #222;
+}
+
+/* NAVBAR */
+
+header
+{
+    height: 100%;
+    width: 50px;
+    background-color: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* ==========NAV-BAR========== */
+nav
+{
+    height: 100%;
+    max-height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.nav__menu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+    height: 600px;
+    align-items: start;
+}
+.nav__list
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 60%;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    gap: 10px;
+}
+.nav__item{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    transition: 0.5s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.nav__item:hover{
+    background-color: var(--white);
+    transition: 0.5s;
+    
+}
+.nav__item a{
+    height: 40px;
+    width:100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    color: var(--white);
+    font-weight: 600;
+}
+.nav__item:hover a{
+    color:var(--blue)
+}
+.nav__toggle{
+    margin-top: 30px;
+    margin-right: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 2.5rem;
+    z-index: 900;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.toggle{
+    cursor: pointer;
+}
+.nav__toggle span{
+    display: flex;
+    height: 4px;
+    width: 35px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin: 6px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.nav__logo{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.icon{
+    position: relative;
+    display: block;
+    min-height: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img{
+    height: 1.5rem;
+    color: white;
+}
+
+.nav__link .title-namenav{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+/* ======================================= */
+
+/* =========BARRA DE PESQUISA========== */
+
+.search{
+    height: 50px;
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar{
+    height: 100%;
+    max-width: 800px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--black2);
+    border-radius: 30px;
+}
+.busca{
+    height: 48px;
+    width: 48px;
+    margin: 0;
+    padding: 7px;
+    border: none;
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.busca img{
+    height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linha-pesquisa{
+    height: 40px;
+    width: 100%;
+    min-width: 40px;
+    margin: 0 5px;
+    padding: 0 10px;
+    font-size: 20px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: #287bff;
+}
+
+/* =========TELA-INICIO========= */
+
+.painel-inicial{
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 900px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+.titulo-painel{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.painel-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.dado-painel{
+    height: 100px;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 0 16px 20px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px #aaaaaa4d;
+    font-weight: 700;
+    flex-basis: 250px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.dado-painel h3{
+    color: #287bff;
+}
+.icon-painel{
+    height: 60px;
+    margin: 0 0 0 20px;
+}
+/* ========DADOS-MAIN========== */
+.painel2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+.main1{
+    max-width: 100%;
+    flex: 1 1 300px;
+    min-width: 270px;
+    height: auto;
+    max-height: 500px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px 5px #aaaaaa4d;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.main2{
+    max-width: 100%;
+    min-width: 300px;
+    flex: 1 1 50px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px 5px #aaaaaa4d;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+}
+
+.listagem-tabela{
+    width: 100%;
+}
+
+@media (max-width:400px) {
+    .main1, .main2{
+        min-width: 200px;
+    }
+}
+
+.listagem{
+    width: 90%;
+    height: 100%;
+    max-height: 400px;
+    margin: 15px 0;
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.listagem li{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 5px 8px;
+    font-size: 18px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.listagem li img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name-user-list{
+    margin: 0 16px 0 0;
+}
+
+/* ==========TABELA=========== */
+.compras-recentes{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 10px 0 0;
+}
+/* .compras-recentes thead{ */
+    /* display: flex;
+    flex-wrap: wrap; */
+/* } */
+.compras-recentes thead th{
+    padding: 8px;
+    
+}
+.compras-recentes thead th:nth-child(even){
+    display: flex;
+    justify-content: right;
+    width: 200px;
+}
+.compras-recentes td{
+    border-bottom: 2px rgba(110, 103, 103, 0.267) solid;
+    padding: 8px;
+}
+
+.compras-recentes tbody tr td:nth-child(even){
+    display: flex;
+    justify-content: right;
+    width: 200px;
+}
